@@ -14,15 +14,12 @@ function submitTime(day){
             "day":day
         },
         success:function(data){
-            console.log(data);
+            console.log(data["images"][0]);
         }
     });
 
 }
 
 function submitDay(day){
-
-
     window.location.href = "http://localhost:5000/"+String(day)+"/";
-
 }

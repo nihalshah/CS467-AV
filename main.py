@@ -3,6 +3,7 @@ from flask import render_template
 from flask import request
 from os import listdir
 from os.path import isfile, join
+from flask import jsonify
 app = Flask(__name__)
 
 
@@ -32,6 +33,6 @@ def get_images():
             image_names.append(onlyfiles[i] + str(".PNG"))
 
     print image_names
-    return "Yay"
+    return jsonify({"images":image_names})
 if __name__ == '__main__':
     app.run(debug=True)

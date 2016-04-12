@@ -1,13 +1,14 @@
 var slider = document.getElementById('slider');
 noUiSlider.create(slider, {
 	start: [12, 16],
-	connect: true,
+    limit:1,
+    connect:true,
+    behaviour:'drag-fixed',
 	tooltips: true,
-	behaviour: 'drag-tap',
-	step:0.1,
+	step:1,
 	range: {
-		'min': 12,
-		'max': 16
+		'min': [12],
+		'max': [16]
 	},
     format:wNumb({
         postfix:'pm'

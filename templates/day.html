@@ -6,15 +6,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src={{ url_for('static',filename='data.js')}}></script>
+
 </head>
 <body>
+<script src={{ url_for('static',filename='data.js')}}></script>
 <div style="background-color: #d9534f; color:whitesmoke" class="jumbotron">
         <h1 class="text-center ">CS 467 Audio Visualization</h1>
 </div>
 
 <h2 class="text-center">CHOOSE A DAY</h2>
-  <a onclick="submitDay(this.innerHTML)" style="margin-left: 600px; margin-top: 200px;" type="button" class="btn btn-primary btn-lg">Saturday</a>
+  <a onclick="submitDay(this.innerHTML)" style="margin-left: 500px; margin-top: 200px;" type="button" class="btn btn-primary btn-lg">Saturday</a>
   <a onclick="submitDay(this.innerHTML)" style="margin-top: 200px;" type="button" class="btn btn-default btn-lg ">Sunday</a>
 </body>
 
