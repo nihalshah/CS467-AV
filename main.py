@@ -6,10 +6,10 @@ from os.path import isfile, join
 app = Flask(__name__)
 
 
-@app.route('/')
-def hello_world():
-    return render_template("index.html")
 
+# def hello_world():
+#     return render_template("index.html")
+@app.route('/')
 @app.route('/day/')
 def day():
     return render_template("day.html")
